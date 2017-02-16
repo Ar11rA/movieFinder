@@ -37,12 +37,4 @@ describe('when insert into database is performed with invalid parameters', funct
         done()
       })
   })
-  // it('should return error object when invalid data type like objects is input', function (done) {
-  //   insertMovie('movie1', 'asd', ['actor1', 'actor2', 'actor3'])
-  //     .catch((data) => {
-  //       expect(typeof (data)).to.eqls('object')
-  //       done()
-  //     })
-  // })
-
 })
