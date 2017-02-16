@@ -3,7 +3,7 @@ const Sequelize = require('sequelize')
 const sequelize = new Sequelize('postgres://aritraaritra:@localhost:5432/' + dbName)
 function displayDataMovies(name) {
   const query = 'select moviename,releasedate,actors,studio from movies where moviename=:name'
-  const displayDb = sequelize.query(query, { replacements: {name:name}})
+  const displayDb = sequelize.query(query, { replacements: { name: name } })
   return displayDb
 }
 function insertMovie(name, release, actors, studio) {

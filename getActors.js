@@ -7,7 +7,6 @@ getActors()
   .then((response) => {
     const actorArray = response.data
     actorArray.forEach((actor) => {
-      //console.log(actor.movies)
       const actMovies = actor.movies
       actMovies.forEach((movie) => {
         if (movies.includes(movie) === false)
@@ -20,11 +19,8 @@ getActors()
       console.log('iter', iter)
       console.log(movies[iter])
       actorArray.forEach((actor) => {
-        //console.log(actor.movies)
         const actMovies = actor.movies
-        // console.log(actMovies)
         actMovies.forEach((movie, index) => {
-          //console.log(movie)
           if (movie === movies[iter]) {
             temp.push(actor.actorName)
           }
