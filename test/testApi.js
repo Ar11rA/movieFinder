@@ -35,7 +35,6 @@ describe('testing for get operation when valid movie is given', function () {
   it('should return an string object with related movie information if valid input is given', function (done) {
     request(options, function (error, response, body) {
       if (error) throw new Error(error)
-
       expect(body).to.eqls(resultString)
       done()
     })
